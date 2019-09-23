@@ -5,12 +5,10 @@ export default StyleSheet.create({
     flex: 1,
   },
   otpContainer: {
-    borderBottomWidth: 1,
-    height: 53,
-    margin: 10,
+    height: 40,
   },
   otpInput: {
-    fontSize: 24,
+    fontSize: 16,
     paddingTop: 10,
     textAlign: 'center',
     width: 40,
@@ -19,7 +17,7 @@ export default StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
   },
   errorMessageContainer: {
     marginHorizontal: 25,

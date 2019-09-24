@@ -6,6 +6,7 @@ export default StyleSheet.create({
   },
   otpContainer: {
     height: 40,
+    margin:10
   },
   otpInput: {
     fontSize: 16,
@@ -17,7 +18,7 @@ export default StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-around',
+    justifyContent: 'flex-start'
   },
   errorMessageContainer: {
     marginHorizontal: 25,

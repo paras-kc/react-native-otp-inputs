@@ -151,9 +151,7 @@ export default class OtpInputs extends PureComponent<Props, State> {
     const { numberOfInputs } = this.props
     const { text } = event.nativeEvent
 
-    if (text.length === numberOfInputs) {
-      this._handleAfterOtpAction(text.split(''), numberOfInputs, true)
-    } else if (text) {
+    if (text) {
       let otpArray = this.state.otpCode
       otpArray[index] = text[text.length - 1]
       this._handleAfterOtpAction(otpArray, index + 1)

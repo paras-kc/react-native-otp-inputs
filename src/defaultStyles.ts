@@ -6,7 +6,7 @@ export default StyleSheet.create({
   },
   otpContainer: {
     height: 40,
-    margin:10
+    margin: 10,
   },
   otpInput: {
     fontSize: 16,
@@ -18,9 +18,17 @@ export default StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'flex-start'
+    justifyContent: 'flex-start',
   },
   errorMessageContainer: {
     marginHorizontal: 25,
+  },
+  cardViewRadiusStyle: {
+    shadowOffset: { width: 0, height: 2 },
+    borderRadius: 4,
+    shadowColor: 'black',
+    shadowOpacity: 0.2,
+    elevation: 4,
+    backgroundColor: '#FFF',
   },
 })

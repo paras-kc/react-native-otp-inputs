@@ -12,7 +12,6 @@ import {
 } from 'react-native'
 
 import defaultStyles from './defaultStyles'
-import CardView from 'react-native-cardview' ;
 
 interface Props {
   autoCapitalize?: 'none' | 'sentences' | 'words' | 'characters'
@@ -84,10 +83,9 @@ export default class OtpInput extends PureComponent<Props, State> {
     } = this.props
 
     return (
-      <CardView 
-        cardElevation={4}
-        cornerRadius={4}                    
+      <View
         style={[
+          defaultStyles.cardViewRadiusStyle,
           defaultStyles.otpContainer,
           containerStyles,
           this.state.isFocused && focusStyles,
@@ -120,7 +118,7 @@ export default class OtpInput extends PureComponent<Props, State> {
           underlineColorAndroid="transparent"
           value={value}
         />
-      </CardView>
+      </View>
     )
   }
 }
